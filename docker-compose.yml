@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vstestapp:
+    image: ${DOCKER_REGISTRY-}vstestapp
+    build:
+      context: .
+      dockerfile: Dockerfile
